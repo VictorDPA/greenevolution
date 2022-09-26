@@ -68,12 +68,23 @@
 
 // console.log(nova);
 
-const product = {
-  name: 'Smart TV Crystal UHD',
-  price: '1899.05',
-  seller: 'Casas de Minas',
+// const product = {
+//   name: 'Smart TV Crystal UHD',
+//   price: '1899.05',
+//   seller: 'Casas de Minas',
+// };
+
+// const { price } = product
+
+// console.log(price);
+
+let arrayzin = [1, 2, '3'];
+// console.log(typeof arrayzin[1]);
+const average = (algo) => {
+  if (algo.length === 0) return undefined;
+  console.log((algo.every(el => typeof el === 'number')) ? 'sim' : 'não');
+  const soma = algo.reduce((total, current) => {
+  return total + current});
+  return Math.round(soma / (algo.length));
 };
-
-const { price } = product
-
-console.log(price);
+console.log(average(arrayzin));
