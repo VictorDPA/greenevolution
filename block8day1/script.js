@@ -353,4 +353,15 @@ const findAverage = (arr) => !arr.length ? 0 : arr.reduce((a, b) => (a + b)) / a
 //   return (max - min + 1) * (min + max) / 2;
 // }
 
-console.log(getSum(2, -1));
+// console.log(getSum(2, -1));
+
+function handshake(n) {
+  // Write your code here  N! / P! * (N - P)!
+  if (n < 2) return 0;
+  let totalCount = 1;
+  for (i = 3; n >= i; n -= 1 ) {
+    totalCount *= n/(n-2);
+  }
+  return Math.round(totalCount);
+}
+console.log(handshake(9348));
