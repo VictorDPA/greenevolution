@@ -14,6 +14,7 @@
 
 // numbers.forEach(multipliesFor2);
 
+
 // const emailListInData = [
 //   'roberta@email.com',
 //   'paulo@email.com',
